@@ -1,0 +1,209 @@
+/*colors*/
+/*-----buttons-----*/
+#bottone1 {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: black;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  color: rgb(251, 237, 133);
+}
+
+#bottone1:hover {
+  box-shadow: 7px 5px 56px -14px black;
+}
+
+#bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px black;
+}
+
+/*-----magnetic-scroll-----*/
+.magnetic-scroll {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.slides {
+  scroll-snap-align: start;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(224, 228, 235, 0.8);
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  padding: 10px 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+}
+
+/*-----main-----*/
+main h1, h2, p {
+  margin-top: 150px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 75px;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem 0;
+}
+
+/*-----home-----*/
+#home {
+  height: calc(100vh - 96px);
+  background: linear-gradient(#91c2b8, #8ca9cc);
+}
+#home img {
+  width: auto;
+  height: 400px;
+}
+#home .container {
+  margin-top: 150px;
+  text-align: left;
+}
+#home h2 {
+  margin-top: 150px;
+  margin-left: 100px;
+  text-align: left;
+  font-size: 50px;
+  font-weight: 700;
+}
+#home h2 span {
+  font-family: "Orbitron", sans-serif;
+  color: #DC2516;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black;
+  font-size: 90px;
+}
+
+/*-----about-----*/
+#about {
+  background: linear-gradient(#8ca9cc, #c6a1c2);
+}
+#about .content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#about h1 {
+  margin-bottom: 80px;
+}
+#about img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+#about p {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+/*-----projects-----*/
+#projects {
+  background: linear-gradient(#c6a1c2, #ecada3);
+}
+#projects p {
+  font-size: 30px;
+}
+
+/*-----skills-----*/
+#skills {
+  background: linear-gradient(#ecada3, #f5d5a0);
+}
+#skills p {
+  font-size: 30px;
+  margin-bottom: 150px;
+}
+#skills img {
+  width: auto;
+  height: 100px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*-----contact-----*/
+#contact {
+  background: linear-gradient(#f5d5a0, #e0e9a3);
+}
+#contact p {
+  font-size: 30px;
+}
+#contact h3 {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#contact img {
+  width: auto;
+  height: 100px;
+}
+#contact imghover {
+  box-shadow: 7px 5px 56px -14px black;
+}
+#contact .button-container, #contact h3, #contact .copy-link {
+  text-align: center;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+footer {
+  text-align: center;
+  background-color: #e0e4eb;
+}
+
+/*# sourceMappingURL=style.css.map */

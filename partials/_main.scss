@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+}
+/*-----main-----*/
+main h1, h2, p{
+  margin-top: 150px;
+  text-align: center; 
+}
+main h1 {
+  font-size: 75px;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+section {
+  width: 100%;
+  min-height:100vh;
+  padding: 1rem 0;
+}
+/*-----home-----*/
+#home {
+  height: calc(100vh - 96px); 
+  background: linear-gradient( $color1, $color2);
+  img {
+    width: auto;
+    height: 400px;
+  }
+  .container {
+    margin-top: 150px;
+    text-align: left;
+  }
+  h2 {
+    margin-top: 150px;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+
+    span {
+    font-family: 'Orbitron', sans-serif;
+    color: #DC2516;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 
+    1px 1px 0 black, 
+    -1px -1px 0 black, 
+    -1px 1px 0 black, 
+    1px -1px 0 black; 
+    font-size: 90px;
+    }
+  }
+}
+/*-----about-----*/
+#about {
+  background: linear-gradient( $color2, $color3);
+  .content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 80px;
+  }
+  img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
+  p {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+}
+/*-----projects-----*/
+#projects {
+  background: linear-gradient( $color3, $color4);
+  p {
+    font-size: 30px;
+  }
+}
+/*-----skills-----*/
+#skills {
+  background: linear-gradient( $color4, $color5);
+  p {
+    font-size: 30px;
+    margin-bottom: 150px;
+  }
+  img {
+    width: auto;
+    height: 100px;
+  }
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+/*-----contact-----*/
+#contact {
+  background: linear-gradient( $color5, $color6);
+  p {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: auto;
+    height: 100px;
+    &hover {
+      box-shadow: 7px 5px 56px -14px black;
+
+    }
+  }
+
+  .button-container, h3, .copy-link {
+    text-align: center;
+  }
+}
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}

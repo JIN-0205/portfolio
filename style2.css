@@ -1,0 +1,136 @@
+
+.header-items {
+    display: flex;
+    align-items: center;
+    padding-right: 3%;
+}
+.header-item {
+    margin-left: 65px;
+    display: flex;
+    flex-direction: row;
+}
+.header-item a {
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+#ham-menu,
+label#menu-icon {
+    display: none;
+}
+#ham-menu {
+    background-color: #fff; 
+    box-sizing: border-box;
+    height: 50%;
+    padding: 300px 40px; 
+    position: fixed;
+    right: -100%;
+    top: 0;
+    transition: transform 0.3s linear 0s; 
+    width: 100%; 
+    z-index: 1000;
+    text-align: center;
+}
+#menu-icon {
+    background-color: rgb(30,40,54);
+    border-radius: 10px;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 50px; 
+    height: 3px; 
+    line-height: 50px; 
+    position: fixed;
+    right: 50%;
+    text-align: center;
+    top: 35px;
+    width: 30px; 
+    transition: all 0.3s linear 0s; 
+    z-index: 1001;
+    transition: 1s;
+}
+#menu-icon::before {
+    content: '';
+    background-color: rgb(30,40,54);
+    border-radius: 10px; 
+    display: block;
+    height: 3px;
+    width: 30px;
+    position: absolute;
+    top: -10px;
+    transition: 1s;
+}
+#menu-icon::after {
+    content: '';
+    background-color: rgb(30,40,54); 
+    border-radius: 10px; 
+    display: block;
+    height: 3px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    transition: 1s;
+}
+#menu-cb {
+    display: none;
+}
+#menu-cb:checked ~ #ham-menu {
+    transform: translate(-100%); 
+    text-align: center;
+}
+#menu-cb:checked ~ #menu-icon,
+#menu-cb:checked ~ #menu-icon::before,
+#menu-cb:checked ~ #menu-icon::after {
+    background-color: rgb(30,40,54);
+}
+#menu-cb:checked ~ #menu-icon { 
+    background-color: #fff; 
+}
+#menu-cb:checked ~ #menu-icon::before {
+    transform: rotate(135deg);
+    transition: 1s;              
+    top: 0px;
+}
+#menu-cb:checked ~ #menu-icon::after {
+    transform: rotate(-135deg);
+    transition: 1s;              
+    top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    /* header */
+    header {
+        position: absolute;
+        height:70px
+    }
+    .header-items {
+        z-index: 10;
+        display: none;
+    }
+    /* header hamburger */
+    #ham-menu,
+    label#menu-icon {
+        display: block;
+    }
+
+
+    /* firstview */
+    .firstview {
+        height: 100vh;
+    }
+    .firstview-imagearea {
+        width: 55%;
+        background: red;
+        height: 300px;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+    .firstview-infoarea {
+        position: absolute;
+        top: 230px;
+        right: 40px;
+        width: 46%;
+    }
+}
