@@ -11,8 +11,8 @@ const ProjectSection = () => {
         "Modern portfolio website built with Next.js, TypeScript, and Tailwind CSS",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
       video: "/videos/portfolio_video.mp4",
-      github: "https://github.com",
-      demo: "https://www.google.com",
+      github: "https://github.com/JIN-0205",
+      demo: "https://www.jin-nakano.net/",
       isComingSoon: false,
     },
     {
@@ -29,8 +29,8 @@ const ProjectSection = () => {
         "Tailwind CSS",
       ],
       video: "/videos/pomolink_video.mp4",
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: "https://github.com/JIN-0205",
+      demo: "https://www.pomolink.net/",
       isComingSoon: false,
     },
     {
